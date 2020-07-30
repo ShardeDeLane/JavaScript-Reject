@@ -38,10 +38,10 @@
 		const heading3 = document.querySelector(".three");
 		const btn = document.querySelector(".btn");
 		const container = document.querySelector(".img-container");
-		const url = `https://source.unsplash.com/random`;
+// 		const url = `https://source.unsplash.com/random`;
 		
 		btn.addEventListener("click", () => {
-// 		const url = `https://source.unsplash.com/random?sig=${getRandomNumber()}`;
+		const url = `https://source.unsplash.com/random?sig=${getRandomNumber()}`;
 			loadImage(url).then((response) => {
 				console.log(response);
 				container.appendChild(response);
@@ -61,10 +61,10 @@
 
 			});
 		}
-
-// 		function getRandomNumber () {
-// 			return (Math.floor(Math.random() * 10));
-// 		}
+		// generate random number for images
+		function getRandomNumber () {
+			return (Math.floor(Math.random() * 10));
+		}
 	</script>
 </body>
 </html>
